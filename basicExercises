@@ -1,0 +1,38 @@
+# Create a function to check if a number is odd
+def is_odd(num):
+    if (num % 2) == 0:
+        print('The number is even')
+    else:
+        print('The number is odd')
+
+is_odd(632)
+
+# Create a function to check if two strings are the same
+def string_check(str1, str2):
+    if str1 == str2:
+        print('The strings are the same')
+    else:
+        print('The strings are different')
+
+string_check("name", "ball")
+
+
+# Write a loop from 0-100 that stops when it hits 25 (end the loop early)
+maxNum = int(input('Enter a number between 0 and 100: '))
+while True:
+    if 0 <= maxNum < 25:
+        maxNum = int(input('Enter a number between 0 and 100: '))
+    elif maxNum >= 25:
+        print('The loop is ending early')
+        break
+        
+# Create a function to find the average value of an array of numbers
+def findAverage(num):
+    sum_num = 0
+    for x in num:
+        sum_num += x
+
+    avg = sum_num / len(num)
+    return avg
+
+print('The average of the list is ', findAverage([18, 9, 3, 8, 5]))
