@@ -6,7 +6,7 @@ def is_odd(num):
         print('The number is odd')
 
 is_odd(632)
-
+-------------------------------------------------------------------------------------------------------
 # Create a function to check if two strings are the same
 def string_check(str1, str2):
     if str1 == str2:
@@ -15,8 +15,7 @@ def string_check(str1, str2):
         print('The strings are different')
 
 string_check("name", "ball")
-
-
+------------------------------------------------------------------------------------------------------------
 # Write a loop from 0-100 that stops when it hits 25 (end the loop early)
 maxNum = int(input('Enter a number between 0 and 100: '))
 while True:
@@ -25,7 +24,7 @@ while True:
     elif maxNum >= 25:
         print('The loop is ending early')
         break
-        
+------------------------------------------------------------------------------------------------------------------        
 # Create a function to find the average value of an array of numbers
 def findAverage(num):
     sum_num = 0
@@ -36,3 +35,13 @@ def findAverage(num):
     return avg
 
 print('The average of the list is ', findAverage([18, 9, 3, 8, 5]))
+---------------------------------------------------------------------------------------------------------
+#Write a loop 0-100 that only prints even numbers
+x = int(input('Enter any number: '))
+while True:
+    if (x % 2) == 0:
+        print('Your number is even')
+        break
+    else:
+        print("Your number is odd")
+        x = int(input('Enter any number: '))
