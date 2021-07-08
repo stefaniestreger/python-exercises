@@ -1,0 +1,18 @@
+#Create a function that finds the average of numbers input from the user in the keyboard, and returns an average
+#when the entered value is -1
+
+def findAverage():
+    num = int(input('Enter a number: '))
+    total = 0
+    count = 0
+    while True:
+        if num != -1:
+            total += num
+            count += 1
+            num = int(input('Enter a number: '))
+        else:
+            break
+    results = (total / count)
+    return results
+
+print(findAverage())
